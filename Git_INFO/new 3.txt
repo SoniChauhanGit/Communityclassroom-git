@@ -1,0 +1,33 @@
+
+
+ls
+mkdir
+cd 
+git init // initializes empty git repository (includes .git hidden folder inside the project)
+ls -a (show all hidden files)
+ls .git (shows what is inside .git hidden folder)
+touch name.txt (to create new file)
+git status (shows you the changes made or what is left to be staged)
+git add name.txt (add individual file to stage) or use git add .(This adds everything to te stage)
+git commit -m "name.txt file added" (commit with a message)
+git restore --staged name.txt (unstage anything that was staged by mistake)
+git log (to see history of all commits)
+rm -rf name.txt (delete the file)
+"you cannot remove a commit in between becoz each commit is build on top of other". 
+which ever commit you want to remove copy the hash number of the commit below e.g x.
+use command git reset x
+this will bring back the project to the x version and all the above changes will be unstaged.
+
+ git stash (to backup all the changes that are staged)
+ git stash pop (to bring back all the changes from backup)
+ git stash clear ( to remove backup data)
+ 
+ end time : 25:00
+ _______________________________________ 
+ 
+Hosting your own local project on git hub (pushing changes remotely)
+
+git remote add origin <URL> (here origin is used for the repository attached to your name/personnel folder
+git remote -v (list the repositories)
+
+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
